@@ -67,3 +67,4 @@ To get started with the Email Sender project, follow these steps:
      spring.mail.imap.password=yourpassword
      spring.mail.imap.ssl.enable=true
 
+![image](https://github.com/user-attachments/assets/e4ba42dc-c12d-4b72-96ef-5c5a99e6a09d)
