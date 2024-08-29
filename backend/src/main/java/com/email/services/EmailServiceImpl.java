@@ -50,7 +50,7 @@ public class EmailServiceImpl implements EmailService{
         simpleMailMessage.setTo(to);
         simpleMailMessage.setSubject(subject);
         simpleMailMessage.setText(message);
-        simpleMailMessage.setFrom("priyasha2909@gmail.com");
+        simpleMailMessage.setFrom("xxx@gmail.com");
 
         mailSender.send(simpleMailMessage);
 
@@ -65,7 +65,7 @@ public class EmailServiceImpl implements EmailService{
     	simpleMailMessage.setTo(to);
     	simpleMailMessage.setSubject(subject);
     	simpleMailMessage.setText(message);
-    	simpleMailMessage.setFrom("priyasha2909@gmail.com");
+    	simpleMailMessage.setFrom("xxx@gmail.com");
     	
     	mailSender.send(simpleMailMessage);
     	 logger.info("Email has been sent");
@@ -79,7 +79,7 @@ public class EmailServiceImpl implements EmailService{
     	MimeMessageHelper helper = new MimeMessageHelper(simpleMailMessage,true,"UTF-8");
     	helper.setTo(to);
     	helper.setSubject(subject);
-    	helper.setFrom("priyasha2909@gmail.com");
+    	helper.setFrom("xxx@gmail.com");
     	helper.setText(htmlContent,true);
     	
     	mailSender.send(simpleMailMessage);
@@ -106,7 +106,7 @@ public class EmailServiceImpl implements EmailService{
 			helper.setTo(to);
 	    	helper.setSubject(subject);
 	    	helper.setText(message);
-	    	helper.setFrom("priyasha2909@gmail.com");
+	    	helper.setFrom("xxx@gmail.com");
 	    	
 	    	 if (file != null && file.exists()) {
 	                helper.addAttachment(file.getName(), file);
@@ -134,7 +134,7 @@ MimeMessage Mimemessage = mailSender.createMimeMessage();
 			helper.setTo(to);
 	    	helper.setSubject(subject);
 	    	helper.setText(message);
-	    	helper.setFrom("priyasha2909@gmail.com");
+	    	helper.setFrom("xxx@gmail.com");
 	    	
 	    	File file = new File("/email/src/main/resources/static/images/test.png");
 	    	Files.copy(is, file.toPath(),StandardCopyOption.REPLACE_EXISTING);
